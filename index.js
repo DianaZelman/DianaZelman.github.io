@@ -51,7 +51,7 @@ function createCharacterCard(character) {
 
 async function openModal(character) {
     const firstEpisode = await getEpisode(character.episode[0]);
-    const lastEpisode = await getEpisode(character.episode[character.episode.length - 1]);
+    // const lastEpisode = await getEpisode(character.episode[character.episode.length - 1]);
 
     modalContent.innerHTML = `
         <div class="modal-content_close" data-close>&times;</div>
@@ -60,13 +60,14 @@ async function openModal(character) {
         </div>
         <div class="modal-content_info">
             <h2>${character.name}</h2>
-            <p><span>Status:</span> ${character.status}</p>
-            <p><span>Species:</span> ${character.species}</p>
-            <p><span>Gender:</span> ${character.gender}</p>
-            <p><span>Origin:</span> ${character.origin.name}</p>
-            <p><span>Location:</span> ${character.location.name}</p>
-            <p><span>First seen in:</span> ${firstEpisode.name}</p>
-            <p><span>Last seen in:</span> ${lastEpisode.name}</p>
+            <ul class="madal-content_list">
+            <li><span>Status:</span> ${character.status}</li>
+            <li><span>Species:</span> ${character.species}</li>
+            <li><span>Gender:</span> ${character.gender}</li>
+            <li><span>Origin:</span> ${character.origin.name}</li>
+            <li><span>Location:</span> ${character.location.name}</li>
+            <li><span>First seen in:</span> ${firstEpisode.name}</li>
+            </ul>
         </div>
     `;
     document.body.style.overflow = 'hidden';
