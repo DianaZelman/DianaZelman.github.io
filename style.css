@@ -55,7 +55,7 @@ body {
 
 @media (min-width: 360px) and (max-width: 559px) {
     .container-card .character-card {
-        margin: 0 30px;
+        margin: 0 11px;
     }
 }
 
@@ -110,9 +110,16 @@ body {
     margin: 149px auto;
 }
 
-@media (min-width: 320px) and (max-width: 654px) {
+@media (min-width: 320px) and (max-width: 413px) {
     .modal-dialog {
-        max-width: 330px;
+        max-width: 280px;
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 654px) {
+    .modal-dialog {
+        max-width: 350px;
         margin: 50px auto;
     }
 }
@@ -183,6 +190,12 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+@media (min-width: 280px) and (max-width: 654px) {
+    .modal-content_close  {
+        display: none;
+    }
 }
 
 .open {
