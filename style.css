@@ -123,8 +123,8 @@ body {
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
-    max-height:80vh;
-    overflow-y: auto;
+    max-height: 80vh;
+    overflow: hidden;
 }
 
 @media (min-width: 280px) and (max-width: 654px) {

@@ -61,12 +61,12 @@ async function openModal(character) {
         <div class="modal-content_info">
             <h2>${character.name}</h2>
             <ul class="madal-content_list">
-            <li><span>Status:</span> ${character.status}</li>
-            <li><span>Species:</span> ${character.species}</li>
-            <li><span>Gender:</span> ${character.gender}</li>
-            <li><span>Origin:</span> ${character.origin.name}</li>
-            <li><span>Location:</span> ${character.location.name}</li>
-            <li><span>First seen in:</span> ${firstEpisode.name}</li>
+                <li><span>Status:</span> ${character.status}</li>
+                <li><span>Species:</span> ${character.species}</li>
+                <li><span>Gender:</span> ${character.gender}</li>
+                <li><span>Origin:</span> ${character.origin.name}</li>
+                <li><span>Location:</span> ${character.location.name}</li>
+                <li><span>First seen in:</span> ${firstEpisode.name}</li>
             </ul>
         </div>
     `;
