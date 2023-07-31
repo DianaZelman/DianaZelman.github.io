@@ -112,7 +112,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 413px) {
     .modal-dialog {
-        max-width: 280px;
+        max-width: 269px;
         margin: 50px auto;
     }
 }
